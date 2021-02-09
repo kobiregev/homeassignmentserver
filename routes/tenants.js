@@ -14,7 +14,7 @@ const getTenantsWithPegenation = async (sortParam = {}, page = 1, limit = 10) =>
     return {
         tenants,
         totalPages: Math.ceil(count / limit),
-        currentPage: page
+        currentPage: +page
     }
 }
 
